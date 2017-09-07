@@ -24,6 +24,53 @@
 		<script src="js/wow.min.js"></script>
 		<script src="js/custom.js"></script>
 		<link rel="shortcut icon" type="image/x-icon" href='images/vihaan.png' />
+        <style>
+        button.accordion {
+    background-color: #686868;
+    color: #fff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #000;
+}
+
+button.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #fff;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+    color: #fff;
+}
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+h10 {
+    font-family: 'jaf-domus', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    font-size: 2.6rem;
+    color: #fff;
+   
+}
+            </style>
+        
 	</head>
 	<body id="top">
 
@@ -55,6 +102,7 @@
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="#top">HOME</a></li>
 						<li><a href="#about">ABOUT</a></li>
+                        <li><a href="#faq">FAQs</a></li>
 						<li><a href="#team">MENTORS</a></li>
 <!--						<li><a href="#service"></a></li>-->
 						<li><a href="#portfolio">SPONSORS</a></li>
@@ -142,9 +190,83 @@
 -->
 				</div>
 			</div>
+            <br>
 		</section>
 		<!-- end about -->
-
+<section id="faq">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+    					<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">Frequently Asked <span>Questions</span></h2>
+    				</div>
+				</div>
+            <button class="accordion">What is Vihaan?</button>
+<div class="panel">
+  <p style="color:black;"> Vihaan is a venture of IEEE WIE, DTU with an objective of motivating girls to take up STEM Fields. This year, Vihaan is a 24 hour hackathon</p>
+</div>
+<br>
+<button class="accordion">When is Vihaan?</button>
+<div class="panel">
+  <p style="color:black;">27-28 October, 2017.</p>
+</div>
+<br>
+            <button class="accordion">Where is Vihaan?</button>
+<div class="panel">
+  <p style="color:black;">Delhi Technological University.</p>
+</div>
+<br>
+            <button class="accordion">Who should attend?</button>
+<div class="panel">
+  <p style="color:black;">University students who are passionate about programming.</p>
+</div>
+<br>
+<button class="accordion">How many members are required to make a team?</button>
+<div class="panel">
+  <p style="color:black;">A maximum of 3 members can form the team, with at least one female member.</p>
+</div>
+<br>            
+<button class="accordion">Is it an all girls event?</button>
+<div class="panel">
+  <p style="color:black;">No. A team must have 1 female participant.</p>
+</div>
+            <br>
+            <button class="accordion">Where can I find the rules?</button>
+<div class="panel">
+    <p style="color:black;">You can find them <a href="rules.html">here</a></p>
+</div>
+            <br>      
+            <button class="accordion">Are there any pre-requisites?</button>
+<div class="panel">
+  <p style="color:black;">No.</p>
+</div>
+    <br>      
+            <button class="accordion">Any special platform preferred?</button>
+<div class="panel">
+  <p style="color:black;">The software can be a mobile or a web application! However, you may need to incorporate a sponsor's API or platform. This would be cleared in the event briefing and updates would be released on the website as well.</p>
+</div>
+    <br> 
+            <button class="accordion">What do you need to carry to the event?</button>
+<div class="panel">
+  <p style="color:black;">College ID, Confirmation mails and laptops!</p>
+</div>
+            <br>
+            <button class="accordion">Is the registration free of cost?</button>
+<div class="panel">
+  <p style="color:black;">Yes.</p>
+</div>
+            <br>
+            <button class="accordion">What is the criteria for shortlisting pf candidates?</button>
+<div class="panel">
+  <p style="color:black;">Participants will be shortlisted on the basis of their resume and github accounts.</p>
+</div>
+            <br>
+            <button class="accordion">Will there be arrangement for food?</button>
+<div class="panel">
+  <p style="color:black;">Yes! And Redbulls, too!</p>
+</div>
+            <br>
+                </div>
+            </section>
     	<!-- start team -->
     	<section id="team">
     		<div class="container">
@@ -331,40 +453,14 @@
     				<div class="col-md-12">
     					<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">CONTACT <span>VIHAAN</span></h2>
     				</div>
-    				<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.9s">
-    					<form action="#" method="post">
-    						<label>NAME</label>
-    						<input name="fullname" type="text" class="form-control" id="fullname">
-   						  	
-                            <label>EMAIL</label>
-    						<input name="email" type="email" class="form-control" id="email">
-   						  	
-                            <label>MESSAGE</label>
-    						<textarea name="message" rows="4" class="form-control" id="message"></textarea>
-    						
-                            <!--<input type="submit" class="form-control">-->
-							<p class='text-center'>
-                    			<a data-scroll href="https://www.facebook.com/messages/t/843893905774807" class="btn btn-default wow fadeInUp" data-wow-offset="50" data-wow-delay="0.6s">MESSAGE US</a>
-                			</p>
-    					</form>
-    				</div>
-    				<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInRight" data-wow-offset="50" data-wow-delay="0.6s">
-    					<address>
-    						<p class="address-title">OUR ADDRESS</p>
-    						<!--<span>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.</span>-->
-    						<p><i class="fa fa-phone"></i> 010-020-0340</p>
-    						<p><i class="fa fa-envelope-o"></i> contact@ieeedtu.com</p>
-    						<p><i class="fa fa-map-marker"></i> Delhi Technological University, Shahbad Daulatpur, Delhi-110042</p>
-    					</address>
-    					<ul class="social-icon">
-    						<li><h4>WE ARE SOCIAL</h4></li>
-    						<li><a href="https://www.facebook.com/Vihaan-843893905774807/" class="fa fa-facebook"></a></li>
-<!--
-    						<li><a href="#" class="fa fa-twitter"></a></li>
-    						<li><a href="#" class="fa fa-instagram"></a></li>
--->
-    					</ul>
-    				</div>
+                    <div class="row">
+            <div class="col-lg-8 col-lg-offset-2" style="text-align:center">
+    				<h10>Kritika Nangia: +91 95829 38851</h10><br>
+            <h10>Aikansh Gupta: +91 7838273225</h10><br>
+                                <h10>Shubhi Sareen: +91 78380 12219</h10><br>
+            <h10>Sagnik Bhowmick: +91 98735 55301</h10><br>
+                        </div>
+                    </div>
     			</div>
     		</div>
     	</section>
@@ -382,6 +478,21 @@
             </div>
         </footer>
         <!-- end copyright -->
+<script>
+        var acc = document.getElementsByClassName("accordion");
+var i;
 
+for (i = 0; i < acc.length; i++) {
+  acc[i].onclick = function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  }
+}
+        </script>
 	</body>
 </html>
