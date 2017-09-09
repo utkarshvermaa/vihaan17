@@ -826,12 +826,13 @@ select.error {
 
 
 /*BEGIN FOOOTER*/
+/*
 
 p > a:hover {
 	color: #d9d9d9;
 	text-decoration: underline;
 }
-
+/*
 h1,
 h2,
 h3,
@@ -958,6 +959,7 @@ ul.social-icons {
 	background-color: #e25714;
 }
 
+*/
 
 /* Sponsors section*/
 
