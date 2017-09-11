@@ -34,6 +34,29 @@ h2 span
 	}
 /* end h2 */
 
+
+
+
+h3
+	{
+		text-align: center;
+		font-size: 20px;
+		padding-bottom: 20px;
+	}	
+h3 span
+	{
+		color: #28a7e9;
+		font-weight: bold;
+	}
+
+
+
+
+
+
+
+
+
 /* start about team service portfolio contact */
 #about, #team, #service,
 #portfolio, #contact
@@ -178,6 +201,13 @@ header .social-icon li a
 		line-height: 40px;
 		padding: 12px 0px 0px 12px;
 	}
+
+.navbar-default img
+	{
+		line-height: 40px;
+		padding: 12px 0px 0px 12px;
+	}
+
 .navbar-default .navbar-nav li a
 	{
 		font-weight: bold;
